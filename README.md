@@ -11,6 +11,35 @@ Tech Stack
 - JWT - Authentication (JSON Web Tokens)
 Project Structure
 The directory structure is designed to be modular and maintainable:
+/datingapps
+├── /cmd
+│   └── main.go
+├── /internal
+│   ├── /auth
+│   │   └── auth.go
+│   ├── /swipes
+│   │   └── swipes.go
+│   ├── /premium
+│   │   └── premium.go
+├── /pkg
+│   ├── /database
+│   │   ├── db.go
+│   │   └── models.go
+│   └── /utils
+│       └── utils.go
+├── /routes
+│   ├── /auth
+│   │   └── auth_controller.go
+│   ├── /swipes
+│   │   └── swipe_controller.go
+│   └── /premium
+│       └── premium_controller.go
+├── /tests
+│   ├── auth_test.go
+├── /migrations
+├── go.mod
+├── go.sum
+└── README.md
 
 Dependencies
 - github.com/golang-jwt/jwt/v4: For JWT token generation and validation.
